@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap" rel="stylesheet">
+	<link rel=" stylesheet" href="style.css">
+	   <script src="https://kit.fontawesome.com/56781427c4.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="PngItem_81341.png" type="image/png" sizes="16x16">
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="header">
+	<div class="logo">
+		<img src="PngItem_81341.png">&nbsp;&nbsp;MusicTime
+	</div>
+	<div class="menu">
+		<ul>
+			<a href = "home.html"><li>Home</li></a>
+			<a href = "index.html"><li>Music Gallery</li></a>
+			<a href = "#"><li  class="active">Contact</li></a>
+		</ul>
+	</div>
+</div>
+<div class="main-form">
+	<div class="form">
+		<label>Name :-</label> <input type="text" placeholder="Enter Your Name" id = "name"><br>
+		<label>Email Address :-</label> <input type="email" placeholder="Enter Your Email Address" id = "email"><br>
+		<label>Phone Number :-</label> <input type="number" placeholder="Enter Your Phone Number" id = "pno"><br>
+		<label>Message  :-</label> <input type="text" placeholder="Enter Your Message" id = "msg"><br><br>
+		 <input type="submit" id = "submit">
+		 <script>
+		 	$("#submit").on("click",function() {
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var pno = $("#pno").val();
+                var msg = $("#msg").val();
+                if(name === "" || email === "" || pno === "" || msg === "") {
+                	alert("All Fields are required");
+                }
+                else {
+                	alert("Thanks For Contacting Us");
+                }
+		 	});
+		 </script>
+	</div>
+	</div>
+	<div class="footer2">
+		<h1 id = "date">
+       <script>
+      var date = new Date();
+      var year = date.getFullYear();
+       var text = 'Copyrights Reserved '+year+' By Sahil Katore';
+        text = document.getElementById('date').innerHTML = text;
+    </script> 
+      </h1><br>
+      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+	</div>
+</body>
+</html>

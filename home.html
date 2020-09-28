@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap" rel="stylesheet">
+	<link rel=" stylesheet" href="style.css">
+	   <script src="https://kit.fontawesome.com/56781427c4.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="PngItem_81341.png" type="image/png" sizes="16x16">
+		<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+<body onload = "hide()">
+	<script type="text/javascript">
+		setInterval(function hide() {
+           $("#music").fadeOut();
+		},1000);
+	</script>
+	<div class="music" id = "music">
+		<h1>Welcome to Origin Music</h1>
+	</div>
+<div class="header">
+	<div class="logo">
+		<img src="PngItem_81341.png">&nbsp;&nbsp;MusicTime
+	</div>
+	<div class="menu">
+		<ul>
+			<a href = "#"><li class="active">Home</li></a>
+			<a href = "index.html"><li>Music Gallery</li></a>
+			<a href = "contact.html"><li>Contact</li></a>
+		</ul>
+	</div>
+</div>
+<div class="main-box">
+	<div class="left-box">
+		<h1>Listen To Music<br>Refresh your current mood😉</h1><br>
+		<a href = "index.html"><button class="btn">View Songs</button></a>
+	</div>
+	<div class="right-img">
+	</div>
+	</div>
+	<div class="tbox">
+		<ul>
+			<li>
+				<i class="fa fa-music" aria-hidden="true"></i>
+				<p>Music is an art form, and cultural activity, whose medium is sound. General definitions of music include common elements such as pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes termed the "color" of a musical sound).</p>
+			</li>
+			<li>
+				<i class="fa fa-play" aria-hidden="true"></i>
+				<p>A song is a musical composition intended to be performed by the human voice. This is often done at distinct and fixed pitches (melodies) using patterns of sound and silence. Songs contain various forms, such as those including the repetition and variation of sections.</p>
+			</li>
+			<li>
+				<i class="fa fa-headphones" aria-hidden="true"></i>
+				<p>Music lets you heal all your pains and makes you forget about your emotions and makes you remember all the memories of particular event which might have happened in the past. Music is the best way to forget all your programs and it makes you happy as well.</p>
+			</li>
+		</ul>
+	</div>
+	<div class="footer">
+		<h1 id = "date">
+       <script>
+      var date = new Date();
+      var year = date.getFullYear();
+       var text = 'Copyrights Reserved '+year+' By Sahil katore';
+        text = document.getElementById('date').innerHTML = text;
+    </script> 
+      </h1><br>
+      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+	</div>
+</body>
+</html>
